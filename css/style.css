@@ -80,10 +80,21 @@ h1{
 }
 .email p{
    word-break: break-all;
-       letter-spacing: -1px;
+  letter-spacing: -1px;
 }
 .about p, .phone p,.email p,.adress p{
   padding: 30px 30px 30px 10px;
+}
+.git{
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 10px 30px;
+}
+.git:hover{
+  color: #767270;
+  background: #ffffff;
 }
 .skills{
   background: #ffffff;
