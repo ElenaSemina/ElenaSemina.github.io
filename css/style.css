@@ -130,6 +130,14 @@ h3{
 .prof_skills li{
   line-height: 2;
   text-align: left;
+  padding-left: 15px;
+  /*list-style-type: circle;*/
+  display: list-item;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.prof_skills ul{
+  padding: 0;
 }
 .prof_skills p{
   margin:25px 10px 5px 0;
