@@ -82,7 +82,7 @@ h1{
    word-break: break-all;
   letter-spacing: -1px;
 }
-.about p, .phone p,.email p,.adress p{
+.about p, .phone p,.email p,.address p{
   padding: 30px 30px 30px 10px;
 }
 .git{
@@ -126,6 +126,9 @@ h3{
 }
 .prof_skills{
   color: #767270;
+}
+.prof_skills li{
+  line-height: 2;
 }
 .prof_skills p{
   margin:25px 10px 5px 0;
