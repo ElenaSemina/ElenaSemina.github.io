@@ -1,0 +1,375 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+      @font-face {
+      	font-family: GothamPro-Medium;
+      	src: url(../font/Gothampro/GothamPro-Medium/GothamPro-Medium.eot?) format('eot'),
+      	     url(../font/Gothampro/GothamPro-Medium/GothamPro-Medium.otf)  format('opentype'),
+      	     url(../font/Gothampro/GothamPro-Medium/GothamPro-Medium.woff) format('woff'),
+      	     url(../font/Gothampro/GothamPro-Medium/GothamPro-Medium.ttf)  format('truetype'),
+      	     url(GothamPro-Medium.svg#GothamPro-Medium) format('svg');
+      }
+      @font-face {
+        font-family: GothamPro-Light;
+        src: url(../font/Gothampro/GothamPro-Light/GothamPro-Light.eot?) format('eot'),
+             url(../font/Gothampro/GothamPro-Light/GothamPro-Light.otf)  format('opentype'),
+             url(../font/Gothampro/GothamPro-Light/GothamPro-Light.woff) format('woff'),
+             url(../font/Gothampro/GothamPro-Light/GothamPro-Light.ttf)  format('truetype'),
+             url(GothamPro-Light.svg#GothamPro-Light) format('svg');
+      }
+body{
+  background: #eae8e7;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: GothamPro-Light;
+  color: #767270;
+}
+.grid{
+  padding: 20px 0;
+}
+
+h1{
+  color:#ffffff;
+  padding-left:20px;
+  text-align: center;
+}
+.info{
+  background:#86c0e5;
+  color: #ffffff;
+  -webkit-box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
+  box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
+}
+.photo{
+width: 250px;
+margin: 0 auto;
+height: 250px;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.dev_img{
+  background: url(../img/1.jpg)no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 243px;
+  position: relative;
+}
+.dev_img:hover{
+  opacity: 0.7;
+}
+h2{
+  position: absolute;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  font-size: 32px;
+  padding: 37px 60px;
+  top: 20%;
+  left: 7%;
+  right: 7%;
+  text-align: center;
+}
+.fa{
+  text-align: center;
+  padding-top:18px;
+}
+.about, .phone,.email{
+  border-bottom: 1px solid #ffffff;
+}
+.email p{
+   word-break: break-all;
+  letter-spacing: -1px;
+}
+.about p, .phone p,.email p,.adress p{
+  padding: 30px;
+}
+.git{
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 10px 30px;
+}
+.git:hover{
+  color: #767270;
+  background: #ffffff;
+}
+.skills{
+  background: #ffffff;
+  /*-webkit-box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
+  box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);*/
+}
+.fa_2x{
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 20px;
+
+}
+.education{
+  border-bottom: 1px solid #767270;
+  padding-bottom: 20px;
+}
+.date{
+  font-style: italic;
+  padding-top: 10px;
+}
+.education p{
+  font-size: 15px;
+}
+h3{
+
+  padding: 25px 0 15px 10px;
+  font-size: 30px;
+}
+
+.progress li{
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  margin: 21px 0;
+}
+
+
+.progress-bar {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.progress-bar div {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.progress-bar div span {
+  position: absolute;
+  font-family: Arial;
+  font-size: 25px;
+  line-height: 75px;
+  height: 75px;
+  width: 75px;
+  left: 12.5px;
+  top: 12.5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.progress-bar .background { background-color: #86c0e5; }
+
+.progress-bar .rotate {
+  clip: rect(0 50px 100px 0);
+  background-color: #86c0e5;
+}
+
+.progress-bar .left {
+  clip: rect(0 50px 100px 0);
+  opacity: 1;
+  background-color: #86c0e5;
+}
+
+.progress-bar .right {
+  clip: rect(0 50px 100px 0);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: #86c0e5;
+}
+
+@keyframes
+toggle {  0% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
+
+
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline{
+  background:  url(../img/wooddesk.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.timeline ul {
+/*  background: #456990;*/
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 1px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 240px;
+  padding: 0 15px;
+  color: #ffffff;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -298px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -8px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #ffffff;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+.my_work{
+
+  margin-bottom: 60px;
+}
+.mariage{
+  background: url(../img/mariage.jpg) no-repeat;
+  background-size: cover;
+
+}
+.grotesque{
+  background: url(../img/grotesque.jpg) no-repeat;
+  background-size: cover;
+
+}
+.mariage a, .grotesque a{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  height: 150px;
+  padding: 10px;
+}
+.mariage a:hover, .grotesque a:hover{
+  background: rgba(0,0,0,0.7);
+}
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 195px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -263px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #ffffff transparent transparent;
+  }
+}
+
+
+@media  screen and (max-width: 767px){
+  body{
+    text-align: center;
+  }
+   h2{
+    padding: 20px 10px;
+    position: absolute;
+    top: 23%;
+  }
+  .grid{
+    padding: 0;
+  }
+}
