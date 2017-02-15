@@ -23,53 +23,53 @@ body{
   font-size: 18px;
   line-height: 1.5;
   font-family: GothamPro-Light;
+  color: #767270;
 }
 .grid{
   padding: 20px 0;
 }
-.name{
-  background: #767270;
-}
+
 h1{
   color:#ffffff;
   padding-left:20px;
+  text-align: center;
 }
 .info{
-}
-.photo{
-  background: url(../img/3.jpg)no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 345px;
-}
-.contact{
-  background:#767270;
+  background:#86c0e5;
   color: #ffffff;
   -webkit-box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
   box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
 }
+.photo{
+width: 250px;
+margin: 0 auto;
+height: 250px;
+border-radius: 50%;
+overflow: hidden;
+}
+
 .dev_img{
   background: url(../img/1.jpg)no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 400px;
+  height: 243px;
   position: relative;
 }
 .dev_img:hover{
   opacity: 0.7;
 }
-.dev_img h2{
+h2{
   position: absolute;
   color: #ffffff;
   border: 2px solid #ffffff;
   text-transform: uppercase;
   font-size: 32px;
-  padding: 90px 60px;
-  top: 21%;
+  padding: 37px 60px;
+  top: 20%;
   left: 7%;
   right: 7%;
-  text-align: center;s
+  text-align: center;
 }
 .fa{
   text-align: center;
@@ -82,8 +82,8 @@ h1{
    word-break: break-all;
   letter-spacing: -1px;
 }
-.about p, .phone p,.email p,.address p{
-  padding: 30px 30px 30px 10px;
+.about p, .phone p,.email p,.adress p{
+  padding: 30px;
 }
 .git{
   text-decoration: none;
@@ -98,15 +98,15 @@ h1{
 }
 .skills{
   background: #ffffff;
-  -webkit-box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
+  /*-webkit-box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
-  box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);
+  box-shadow: 2px 1px 17px -4px rgba(0,0,0,0.75);*/
 }
 .fa_2x{
   text-align: center;
   padding-top: 15px;
   padding-left: 20px;
-  color: #767270;
+
 }
 .education{
   border-bottom: 1px solid #767270;
@@ -120,86 +120,254 @@ h1{
   font-size: 15px;
 }
 h3{
-  color: #767270;
+
   padding: 25px 0 15px 10px;
   font-size: 30px;
 }
-.prof_skills{
-  color: #767270;
+
+.progress li{
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  margin: 21px 0;
 }
-.prof_skills li{
-  line-height: 2;
-  text-align: left;
-  padding-left: 15px;
-  /*list-style-type: circle;*/
-  display: list-item;
-  list-style-type: circle;
-  list-style-position: inside;
-}
-.prof_skills ul{
-  padding: 0;
-}
-.prof_skills p{
-  margin:25px 10px 5px 0;
-}
-.progressbar {
+
+
+.progress-bar {
   position: relative;
-  width: 80%;
-  height: 5px;
-  background-color: #ddd;
-  border-radius: 2px;
-  margin-left: 30px;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
 }
-.html_bar {
+
+.progress-bar div {
   position: absolute;
-  width: 85%;
-  height: 100%;
-  border-radius: 2px;
-  background-color: #767270;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
 }
-.css_bar{
+
+.progress-bar div span {
   position: absolute;
-  width: 80%;
-  height: 100%;
-  border-radius: 2px;
-  background-color: #767270;
+  font-family: Arial;
+  font-size: 25px;
+  line-height: 75px;
+  height: 75px;
+  width: 75px;
+  left: 12.5px;
+  top: 12.5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
 }
-.java_script_bar {
+
+.progress-bar .background { background-color: #86c0e5; }
+
+.progress-bar .rotate {
+  clip: rect(0 50px 100px 0);
+  background-color: #86c0e5;
+}
+
+.progress-bar .left {
+  clip: rect(0 50px 100px 0);
+  opacity: 1;
+  background-color: #86c0e5;
+}
+
+.progress-bar .right {
+  clip: rect(0 50px 100px 0);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: #86c0e5;
+}
+
+@keyframes
+toggle {  0% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
+
+
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline{
+  background:  url(../img/wooddesk.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.timeline ul {
+/*  background: #456990;*/
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 1px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
   position: absolute;
-  width: 50%;
-  height: 100%;
-  border-radius: 2px;
-  background-color: #767270;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
 }
-.bootstrap_bar{
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 240px;
+  padding: 0 15px;
+  color: #ffffff;
+}
+
+.timeline ul li div::before {
+  content: '';
   position: absolute;
-  width: 75%;
-  height: 100%;
-  border-radius: 2px;
-  background-color: #767270;
+  bottom: 2px;
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
-.git_bar{
-  position: absolute;
-  width: 70%;
-  height: 100%;
-  border-radius: 2px;
-  background-color: #767270;
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
 }
-.photoshop_bar{
-  position: absolute;
-  width: 70%;
-  height: 100%;
-  border-radius: 2px;
-  background-color: #767270;
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #ffffff transparent transparent;
 }
-@media handheld, only screen and (max-width: 767px){
+
+.timeline ul li:nth-child(even) div {
+  left: -298px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -8px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #ffffff;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+.my_work{
+
+  margin-bottom: 60px;
+}
+.mariage{
+  background: url(../img/mariage.jpg) no-repeat;
+  background-size: cover;
+
+}
+.grotesque{
+  background: url(../img/grotesque.jpg) no-repeat;
+  background-size: cover;
+
+}
+.mariage a, .grotesque a{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  height: 150px;
+  padding: 10px;
+}
+.mariage a:hover, .grotesque a:hover{
+  background: rgba(0,0,0,0.7);
+}
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 195px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -263px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #ffffff transparent transparent;
+  }
+}
+
+
+@media  screen and (max-width: 767px){
   body{
     text-align: center;
   }
-  .dev_img h2{
+   h2{
     padding: 20px 10px;
     position: absolute;
-    top: 40%;s
+    top: 23%;
   }
   .grid{
     padding: 0;
