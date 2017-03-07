@@ -319,15 +319,19 @@ time {
   background-size: cover;
 
 }
-.mariage a, .grotesque a{
+.mariage a, .grotesque a,.clohting a{
   text-decoration: none;
   color: #ffffff;
   display: block;
   height: 150px;
   padding: 10px;
 }
-.mariage a:hover, .grotesque a:hover{
+.mariage a:hover, .grotesque a:hover,.clohting a:hover{
   background: rgba(0,0,0,0.7);
+}
+.clohting{
+  background: url(../img/сloth.png) no-repeat;
+  background-size: cover;
 }
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
