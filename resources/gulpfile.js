@@ -18,7 +18,6 @@ var concat = require('gulp-concat'), //обьединение скриптов
 // JS
 gulp.task('scripts', function() {
     gulp.src([
-        "./node_modules/jquery/dist/jquery.js",
         "./node_modules/waypoints/lib/jquery.waypoints.js",
         "./node_modules/waypoints/lib/shortcuts/inview.js"
 
