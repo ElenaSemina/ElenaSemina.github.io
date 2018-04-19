@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>map</title>
+</head>
+<body>
+
+
+<div id="map"></div>
+<div id="floating-panel">
+      <span>Координаты:</span>
+      <input id="latlng" type="text" value="40.714224,-73.961452"><br>
+      <span>Радиус:</span>
+      <input id="radius" type="number" value="5000">
+      <span>метров</span><br>
+      <button id="submit" type="submit">Найти</button>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1N-V1x6DvkoZYbQdGUDdQxcLnCT72z3c&callback=initMap"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
